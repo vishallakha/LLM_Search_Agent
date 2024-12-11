@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
 
-  # to run this workflow manually from the Actions tab
+  # To run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,9 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Push to hub
+      - name: Pull latest changes
+        run: git pull
+      - name: Push to Hugging Face Hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://vishallakha:$HF_TOKEN@huggingface.co/spaces/vishallakha/Search-Agent main
+        run: git push https://vishallakha:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/vishallakha/Search-Agent main
