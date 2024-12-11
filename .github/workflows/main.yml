@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
           lfs: true
       - name: Pull latest changes
-        run: git pull
+        run: git push --force space main
       - name: Push to Hugging Face Hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
