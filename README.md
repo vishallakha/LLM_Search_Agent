@@ -1,6 +1,6 @@
 ---
 title: Search Agent
-emoji: 
+emoji: smiling face
 colorFrom: indigo
 colorTo: purple
 sdk: streamlit
