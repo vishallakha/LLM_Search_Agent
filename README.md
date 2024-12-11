@@ -1,6 +1,10 @@
-# LLM_Search_Agent
-
-- Groq API
-- LangChain
-- Agents (Wikipedia and arxiv)
-- Streamlit
+---
+title: Search Agent
+emoji: 
+colorFrom: indigo
+colorTo: purple
+sdk: streamlit
+sdk_version: "0.79.0"
+app_file: app.py
+pinned: true
+---
